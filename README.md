@@ -12,7 +12,7 @@ Below is the simplified version of the architechture design of the tool.
 We have devided into 5 distinct steps for this workflow of the tool <br />
 - Step 1: Keywords
  * Topic extraction: Based on the initial input prompt from the user, it will extract the relevant topic with LLM. 
- * Keywords generation: Once topic is obtained, we will then make use of it to generate 2 additional distinct keywords with LLM. 
+ * Keywords generation: Once topic is obtained, we will then make use of it to generate 2 additional distinct keywords with LLM. <br />
 With the two pre-processing steps done, user can freely input phrases or single keywords and Generative AI will take care of things. <br />
 Example  <br />
 Initial prompt : "I would like to know about the latest advancement in Hydrogen Battery" <br />
