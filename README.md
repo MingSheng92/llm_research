@@ -49,3 +49,5 @@ keywords generated : Hydrogen Battery, Hydrogen Fuel Cell, Hydrogen Energy Stora
 With this design we managed to achieve comparable results to opensource projects/articles.  
 ![comparison](https://github.com/MingSheng92/llm_research/blob/main/images/compare.png)
 
+####
+Recent study from standford also suggest that LLMs are equally good at proposing ideas, hence validating our work here as a recommender for researchers on potential research topics and improvement suggestions. ![Link](https://www.deeplearning.ai/the-batch/stanford-study-finds-ai-matches-human-experts-at-writing-research-proposals/?utm_campaign=The%20Batch&utm_content=320262824&utm_medium=social&utm_source=linkedin&hss_channel=lcp-18246783)
