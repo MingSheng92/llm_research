@@ -2,6 +2,15 @@
 
 Will not be sharing the code here but will be talking abit more on the design choices and serving as a simple dev log for myself and anyone interested in this topic.
 
+#### Built with 
+cloud service: AWS bedrock, EC2, cognito 
+LLM: Claude sonnet, haiku 
+Rerank model: cohere rerank 
+Embedding model: all-MiniLM-L6-v2/bge-large
+API: Patbase
+Vector store : FAISS
+libraries : llama-index, streamlit, python, Dockers, md2pdf
+
 #### Abstarct 
 In a collaboration with R&D, we aim to create an automated way of performing intial research for the researchers and provide a recommendations from the current patent landscape's trend.
 
@@ -20,7 +29,7 @@ topic extracted : Hydrogen Battery <br />
 keywords generated : Hydrogen Battery, Hydrogen Fuel Cell, Hydrogen Energy Storage <br />
 
 - Step 2: Retrieval of patents
-  * A custom retrieval class for patbase was built for this PoC to retrieve 20 latest patents from each keywords (configurable)
+  * A custom retrieval class for patbase was built to retrieve 20 latest patents from each keywords (configurable) with concurrent to maximize efficiency of retrieval.
   * all credentials are stored in sqlite3 database with both username and password encrypted.
   Preprocessing done to remove all unnecessary information and select only english or machine translated (if source is not in english), this is to optimize LLM ulitization where we feed only what we need the LLM to read which in turn lower the cost and shorten the process of inference time.  <br />
 
