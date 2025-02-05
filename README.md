@@ -3,13 +3,13 @@
 Will not be sharing the code here but will be talking abit more on the design choices and serving as a simple dev log for myself and anyone interested in this topic.
 
 #### Built with 
-cloud service: AWS bedrock, EC2, cognito 
-LLM: Claude sonnet, haiku 
-Rerank model: cohere rerank 
-Embedding model: all-MiniLM-L6-v2/bge-large
-API: Patbase
-Vector store : FAISS
-libraries : llama-index, streamlit, python, Dockers, md2pdf
+cloud service: AWS bedrock, EC2, cognito  <br />
+LLM: Claude sonnet, haiku  <br />
+Rerank model: cohere rerank  <br />
+Embedding model: all-MiniLM-L6-v2/bge-large <br />
+API: Patbase <br />
+Vector store : FAISS <br />
+libraries : llama-index, streamlit, python, Dockers, md2pdf <br />
 
 #### Abstarct 
 In a collaboration with R&D, we aim to create an automated way of performing intial research for the researchers and provide a recommendations from the current patent landscape's trend.
