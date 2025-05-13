@@ -41,11 +41,11 @@ keywords generated : Hydrogen Battery, Hydrogen Fuel Cell, Hydrogen Energy Stora
   A 5X savings on setup time efficiency gain. <br />
   
   Here are some other methods I explored during the project:
-- Hybrid search: vDB + BM25
+  * Hybrid search: vDB + BM25
 
 Hybrid search combines semantic vector-based search with traditional keyword-based text search (BestMatch25). It theoretically improves retrieval accuracy by not only considering the meaning of the text but also precise keyword matches. Typically, results from both methods are merged and reranked by a combined score. Based on my experience, it reduced the retrieval quality instead of improving it.
 
--Cross-encoder reranking
+* Cross-encoder reranking
 Reranking the results of vector search using Cross-encoder models seemed promising. In short, Cross-encoders give a more precise similarity score but are slower.
 
 Cross-encoders lie between embedding models (bi-encoders) and LLMs. Unlike comparing texts via their vector representations (which inherently lose some information), cross-encoders directly assess semantic similarity between two texts, giving more accurate scores.
