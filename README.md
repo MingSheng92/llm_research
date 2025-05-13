@@ -39,6 +39,18 @@ keywords generated : Hydrogen Battery, Hydrogen Fuel Cell, Hydrogen Energy Stora
   Rerank model: ~20 sec to rerank and return top 20 docs <br />
   Llama-index/langchain: > 1 min to setup the vector store and return top 20 chunks <br />
   A 5X savings on setup time efficiency gain. <br />
+  
+  Here are some other methods I explored during the project:
+- Hybrid search: vDB + BM25
+
+Hybrid search combines semantic vector-based search with traditional keyword-based text search (BestMatch25). It theoretically improves retrieval accuracy by not only considering the meaning of the text but also precise keyword matches. Typically, results from both methods are merged and reranked by a combined score. Based on my experience, it reduced the retrieval quality instead of improving it.
+
+-Cross-encoder reranking
+Reranking the results of vector search using Cross-encoder models seemed promising. In short, Cross-encoders give a more precise similarity score but are slower.
+
+Cross-encoders lie between embedding models (bi-encoders) and LLMs. Unlike comparing texts via their vector representations (which inherently lose some information), cross-encoders directly assess semantic similarity between two texts, giving more accurate scores.
+
+However, pairwise comparisons of the query with every database element take too long.
 
 - Step 4: Report generation
   * This is where the main focus of this whole PoC, we wanted to have an AI to write out a report for the researchers so that they are well informed on the current patent landscape but also to recommend the researchers on potential topics to look at.
